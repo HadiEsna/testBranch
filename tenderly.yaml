@@ -1,0 +1,45 @@
+# Learn how to configure DevNet templates using YAML here: https://docs.tenderly.co/devnets/yaml-template
+
+version: v0
+template:
+  name: noya
+  block-number: latest
+  visibility: TEAM
+  network-id: 1
+  execution:
+    chain-config:
+      chain-id: 1
+    block-gas-limit: 10000000
+    base-fee-per-gas: 1000000000
+
+  #   contracts:
+  #     - address: 0x395eD9ffd32b255dBD128092ABa40200159d664b
+  #       bytecode: 0x123412341234123124123143
+  #       balance: 100
+  #       slots:
+  #         - 0x3459054d09ae8631455b798b2b5d106e17bb4e68a39d2d2a935f5f1b7253988c: 0x0000000000000000000000000000000000000000000000000000000000000000
+  #         - 0x3459054d09ae8631455b798b2b5d106e17bb4e68a39d2d2a935f5f1b7253988d: 0x0000000000000000000000000000000000000000000000000000000000000001
+  #   wallets:
+  #     - address: 0x395eD9ffd32b255dBD128092ABa40200159d664b
+  #       balance: 100
+  #     - private-key: 0x3459054d09ae8631455b798b2b5d106e17bb4e68a39d2d2a935f5f1b7253988c
+  #       balance: 100
+  #   storage:
+  #     - address: 0x395eD9ffd32b255dBD128092ABa40200159d664b
+  #       slots:
+  #         - 0x1459054d09ae8631455b798b2b5d106e17bb4e68a39d2d2a935f5f1b7253988c: 0x0000000000000000000000000000000000000000000000000000000000000001
+  #         - 0x2459054d09ae8631455b798b2b5d106e17bb4e68a39d2d2a935f5f1b7253988c: 0x0000000000000000000000000000000000000000000000000000000000000002
+  #     - address: 0xabcde9ffd32b255dBD128092ABa40200159d665a
+  #       slots:
+  #         - 0x3459054d09ae8631455b798b2b5d106e17bb4e68a39d2d2a935f5f1b7253988c: 0x0000000000000000000000000000000000000000000000000000000000000003
+  #   balances:
+  #     - address: 0x395eD9ffd32b255dBD128092ABa40200159d664b
+  #       amount: 1000
+  #     - address: 0x395eD9ffd32b255dBD128092ABa40200159d664b
+  #       amount: 1000
+  #   erc20:
+  #     - contract: 0x6B175474E89094C44Da98b954EedeAC495271d0F # DAI
+  #       balances:
+  #         - address: 0x0000000000000000000000000000000000000000
+  #           amount: 100
+  display-name: Noya
